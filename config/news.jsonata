@@ -1,0 +1,13 @@
+$.({
+    "sports": (
+        $map($.**.item, function($v, $i, $a){(
+            {
+                "image": $v.**.url,
+                "title": $v.title[0],
+                "description": $v.description[0],
+                "createdAt": $v.pubDate[0],
+                "excerpt": $v.description[0]
+            }
+        )})
+    )
+})
